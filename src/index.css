@@ -282,16 +282,17 @@ text-align: end;
   z-index: 100;
   /* will-change: transform; */
   transition: all 1s ease-in-out;
-
+  display: flex;
+  justify-content: end;
 }
 .cart-container{
   height: 100vh;
   width: 600px;
   background-color: white;
   float: right;
+
   padding: 40px 10px;
-  position: relative;
-  
+  /* position: relative; */
 }
 
 .footer-container{
@@ -345,7 +346,7 @@ text-align: end;
 .product-container{
   margin-top: 15px;
   overflow: auto;
-max-height: 70vh;
+max-height: 72vh;
 padding: 20px 10px;
 }
 .product{
@@ -377,10 +378,14 @@ padding: 20px 10px;
 }
 .total{
   display: flex;
-  justify-content: space-between;
+  justify-content: end
 }
+.T-price {
+  margin-left: 50px;
+}
+
 .total h3{
-  font-size: 22px;
+  font-size: 20px;
 
 }
 .remove-item{
@@ -392,16 +397,20 @@ padding: 20px 10px;
 }
 .cart-bottom{
   position: absolute;
-  bottom: 12px;
+  bottom: 30px;
   right: 5px;
 width: 100%;
 padding: 30px 65px;
-
 }
 
 .btn-container{
   width: 400px;
   margin: auto;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 25px;
+  right: 60px;
 }
 .btn{
   width: 100%;
@@ -409,7 +418,7 @@ padding: 30px 65px;
   padding: 10px 12px;
   border-radius: 15px;
   border: none;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 40px;
   text-transform: uppercase;
   background-color: #f02d34;
@@ -628,7 +637,7 @@ margin-top: 160px;
     height: 560px;
   }
   .hero-banner-image{
-    width: 77%;
+    width: 65%;
     height: 62%;
     top: -2%;
     right: -6%;
@@ -738,8 +747,9 @@ margin-top: 160px;
 }
 
 .total h3{
-  font-size: 20px;
+  font-size: 18px;
 }
+
 .track {
   animation: marquee 10s linear infinite;
   width: 550%;
