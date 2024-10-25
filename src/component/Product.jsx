@@ -36,7 +36,7 @@ const Product = () => {
     <div className="products-container">
       {products.length > 0 ? (
         products.map((product) => (
-          <a href={`/productDetail/${product.slug}`} key={product._id}>
+          <a href={`/productdetail/${product.slug}`} key={product._id}>
           <div key={product._id} className="product-card">
             <img src={product.imageUrl} alt={product.name} width="300" className='product-image' />
             <h3 className='product-name'>{product.name}</h3>

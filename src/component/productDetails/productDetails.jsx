@@ -7,7 +7,7 @@ import { client } from '../../../lib/client';
 import Product from '../Product';
 import { useStateContext } from '../../../context/StateContext';
 
-const ProductDetails = () => {
+const Productdetails = () => {
   const { qty, incQty, decQty, cartItems, setCartItems, totalPrice, setTotalPrice, totalQuantities, setTotalQuantities } = useStateContext();
   const [index, setIndex] = useState(0);
   const { slug } = useParams();
@@ -159,4 +159,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default Productdetails;
